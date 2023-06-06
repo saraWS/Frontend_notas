@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estudiantes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestion Estudiantes</h1>
+    </header>
+    <main>
+        <section>
+            <button id="registrar">Registrar estudiante</button>
+            <table id="estudiantesTb">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <button id="modificar">Modificar</button>
+                        </td>
+                        <td>
+                            <button id="Eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2 id="tituloModal">Crear/Modificar</h2>
+            <form id="formEstudiante" name="formularioEstudiante">
+                <label>
+                    <span>Codigo:</span>
+                    <input id="codigo" type="number" name="codigo" required>
+                    <span>Nombres:</span>
+                    <input id="nombres" type="text" name="nombres" maxlength="250" required>
+                    <span>Apellidos:</span>
+                    <input id="apellidos" type="text" name="apellidos" maxlength="250" required>
+                </label>
+                <section>
+                    <button id="guardar" type="button">Guardar</button>
+                </section>
+            </form>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/estudiantes.js"></script>
+</body>
+
+</html>

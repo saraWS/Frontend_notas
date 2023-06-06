@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estudiantes</title>
+</head>
+
+<body>
+    <header>
+        <h1>Actividades</h1>
+    </header>
+    <main>
+        <section>
+            <button id="registrar">Registrar actividad</button>
+        </section>
+        <section>
+            <table id="actividadesTb">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Descripción</th>
+                        <th>Nota</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2 id="tituloModal">Crear/Modificar</h2>
+            <form id="formActividad" name="formularioActividad">
+                <label>
+                    <span>Descripción:</span>
+                    <input id="descripcion" type="text" name="descripcion" maxlength="500" required>
+                    <span>Nota:</span>
+                    <input id="nota" type="number" name="nota" required>
+                    <span>Codigo del estudiante:</span>
+                    <input id="codigoEstudiante" type="number" name="codigoEstudiante" required>
+                </label>
+                <section>
+                    <button id="guardar" type="button">Guardar</button>
+                </section>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <a href="estudiantes.html">Inicio</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/actividades.js"></script>
+</body>
+
+</html>
