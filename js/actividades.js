@@ -7,7 +7,7 @@ $(document).ready(function () {
 function mostrarActividades() {
     $.ajax({
         method: 'get',
-        url: 'http://localhost:8000/veractividades'
+        url: 'http://localhost:8000/verActividades'
     }).done((response) => {
         const dataJson = JSON.parse(response);
         const actividades = dataJson.data;
@@ -67,7 +67,7 @@ document.getElementById('guardar').addEventListener('click', () => {
     if (indexActividad == -1) {
         // CREAR
         $.ajax({
-            url: 'http://localhost:8000/crearActividades',
+            url: 'http://localhost:8000/crearActividades/' + codigoEstudiante,
             method: 'post',
             data: {
                 descripcion: descripcion,
